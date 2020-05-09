@@ -7,7 +7,9 @@
     "develop": "gatsby develop",
     "test": "jest",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,8 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "snyk": "^1.319.2"
   },
   "devDependencies": {
     "eslint": "^5.7.0",
@@ -44,5 +47,6 @@
     "testPathIgnorePatterns": [
       ".cache/"
     ]
-  }
+  },
+  "snyk": true
 }
